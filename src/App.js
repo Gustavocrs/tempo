@@ -30,7 +30,7 @@ function App() {
 
   if (location === false) {
     return <>Sua localização precisa estar habilitada</>;
-  } else if (weather === false) {
+  } else if (weather === true) {
     return <>Carregando...</>;
   } else {
     <>
