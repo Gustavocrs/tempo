@@ -18,6 +18,7 @@ function App() {
       },
     });
     setWeather(res.data);
+    console.log(res)
   };
 
   useEffect(() => {
