@@ -18,7 +18,6 @@ function App() {
       },
     });
     setWeather(res.data);
-    console.log(res)
   };
 
   useEffect(() => {
@@ -30,41 +29,26 @@ function App() {
 
   if (location === false) {
     return <>Sua localização precisa estar habilitada</>;
-  } else if (weather === true) {
+  } else if (weather === false) {
     return <>Carregando...</>;
   } else {
-    <>
-      <h3>
-        Veja o tempo nas suas coordenadas({weather["weather"][0]["description"]}
-        )
-      </h3>
-      <hr />
-      <ul>
-        <li>Temperatura atual: {weather["main"]["temp"]}º</li>
-        <li>Temperatura máxima: {weather["main"]["temp_max"]}º</li>
-        <li>Temperatura mínima: {weather["main"]["temp_min"]}º</li>
-        <li>Pressão: {weather["main"]["pressure"]}hpa</li>
-        <li>Umidade: {weather["main"]["humidity"]}%</li>
-      </ul>
-    </>;
+    return (
+      <>
+        <h3>Localização estimada: "{weather["name"]}"</h3>
+        <hr />
+        <ul>
+          <li>Visão do tempo: {weather["weather"][0]["description"]} </li>
+          <li>Temperatura atual: {weather["main"]["temp"]}º</li>
+          <li>Sensação térmica: {weather["main"]["feels_like"]}º</li>
+          <li>Temperatura máxima: {weather["main"]["temp_max"]}º</li>
+          <li>Temperatura mínima: {weather["main"]["temp_min"]}º</li>
+          <li>Pressão: {weather["main"]["pressure"]}hpa</li>
+          <li>Umidade: {weather["main"]["humidity"]}%</li>
+          <li>Ventos: {weather["wind"]["speed"]}km/h</li>
+        </ul>
+      </>
+    );
   }
-
-  return (
-    <>
-      <h3>
-        Veja o tempo nas suas coordenadas({weather["weather"][0]["description"]}
-        )
-      </h3>
-      <hr />
-      <ul>
-        <li>Temperatura atual: {weather["main"]["temp"]}º</li>
-        <li>Temperatura máxima: {weather["main"]["temp_max"]}º</li>
-        <li>Temperatura mínima: {weather["main"]["temp_min"]}º</li>
-        <li>Pressão: {weather["main"]["pressure"]}hpa</li>
-        <li>Umidade: {weather["main"]["humidity"]}%</li>
-      </ul>
-    </>
-  );
 }
 
 export default App;
