@@ -27,9 +27,9 @@ function App() {
     });
   }, []);
 
-  if (location == false) {
+  if (location === false) {
     return <>Sua localização precisa estar habilitada</>;
-  } else if (weather == false) {
+  } else if (weather === false) {
     return <>Carregando...</>;
   } else {
     <>
