@@ -1,6 +1,8 @@
 * {
-  padding: 0;
   margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
   box-sizing: border-box;
 }
 
@@ -9,8 +11,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10px;
-  background: linear-gradient(#92bee6, #c2d9e6);
 }
 
 h1{
@@ -20,9 +20,10 @@ h1{
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   background: linear-gradient(#92bee6, #c2d9e6);
-  padding: 20px;
   border-radius: 20px;
 }
 
@@ -40,6 +41,7 @@ h1{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 50px 0;
 }
 
 .divIcons {
@@ -67,6 +69,10 @@ h1{
     border-radius: 0;
   }
 
+  .divList{
+    margin: 0;
+  }
+
   .principal {
     font-size: 6rem;
   }
@@ -88,7 +94,7 @@ h1{
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fff;
+  background: #000;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .ldsEllipsis div:nth-child(1) {
