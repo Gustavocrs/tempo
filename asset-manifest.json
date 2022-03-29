@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tempo/static/css/main.0483b188.css",
-    "main.js": "/tempo/static/js/main.0058a939.js",
+    "main.css": "/tempo/static/css/main.decf754b.css",
+    "main.js": "/tempo/static/js/main.21d0e144.js",
     "index.html": "/tempo/index.html",
-    "main.0483b188.css.map": "/tempo/static/css/main.0483b188.css.map",
-    "main.0058a939.js.map": "/tempo/static/js/main.0058a939.js.map"
+    "main.decf754b.css.map": "/tempo/static/css/main.decf754b.css.map",
+    "main.21d0e144.js.map": "/tempo/static/js/main.21d0e144.js.map"
   },
   "entrypoints": [
-    "static/css/main.0483b188.css",
-    "static/js/main.0058a939.js"
+    "static/css/main.decf754b.css",
+    "static/js/main.21d0e144.js"
   ]
 }
