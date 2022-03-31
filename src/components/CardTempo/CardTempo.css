@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background: linear-gradient(#92bee6, #c2d9e6);
+  border-radius: 20px;
+}
+
+.infos {
+  margin: 15px;
+}
+
+.lista {
+  
+}
+
+.principal {
+  font-size: 4rem;
+}
+
+.divList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.divIcons {
+  width: 150px;
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.icon {
+  font-size: 3.5rem;
+}
+
+.iconDesc {
+  font-size: 1.8rem;
+}
+
+.miniDesc{
+  font-size: 1rem;
+}

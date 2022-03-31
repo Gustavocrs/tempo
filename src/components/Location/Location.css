@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background: linear-gradient(#92bee6, #c2d9e6);
+  border-radius: 20px;
+}
+
+.icon {
+  font-size: 3.5rem;
+}
