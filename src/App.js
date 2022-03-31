@@ -25,10 +25,15 @@ export default function App() {
   }
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      getWeather(position.coords.latitude, position.coords.longitude)
-      setLocation(true)
-    })
+    navigator.geolocation.watchPosition(
+      (position) => {
+        getWeather(position.coords.latitude, position.coords.longitude)
+        setLocation(true)
+      },
+      (erro) => {
+        console.log(erro)
+      },
+    )
   }, [])
 
   if (location === false) {
@@ -36,6 +41,6 @@ export default function App() {
   } else if (weather === false) {
     return <Loading />
   } else {
-    return <CardTempo clima={weather}/>
+    return <CardTempo clima={weather} />
   }
 }
