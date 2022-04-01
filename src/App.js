@@ -26,12 +26,16 @@ export default function App() {
 
   useEffect(() => {
     navigator.geolocation.watchPosition(
-      (position) => {
-        getWeather(position.coords.latitude, position.coords.longitude)
-        setLocation(true)
-      },
-      (erro) => {
-        console.log(erro)
+      (position) => (
+        getWeather(position.coords.latitude, position.coords.longitude),
+        setLocation(true),
+        console.log(position)
+      ),
+      (error) => console.log(error),
+      {
+        enableHighAccuracy: true,
+        timeout: 3000,
+        maximumAge: 1000,
       },
     )
   }, [])
