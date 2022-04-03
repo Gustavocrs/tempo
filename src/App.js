@@ -29,10 +29,13 @@ export default function App() {
       (position) => {
         getWeather(position.coords.latitude, position.coords.longitude)
         setLocation(true)
-      },
-      (erro) => {
-        console.log(erro)
-      },
+      console.log(position)},
+      (error) => console.log(error),
+      (options) => ({
+        enableHighAccuracy: true,
+        timeout: 3000,
+        maximumAge: 1000,
+      })
     )
   }, [])
 
