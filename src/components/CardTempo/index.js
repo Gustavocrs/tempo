@@ -25,7 +25,7 @@ export default function CardTempo(props) {
             <div className="divIcons">
               <WiThermometerExterior className="icon" />
               <p className="iconDesc"></p>
-              <p className="miniDesc">Minima</p>
+              <p className="miniDesc">Mínima</p>
               {props.clima['main']['temp_min'].toFixed(1)}º
             </div>
             <div className="divIcons">
