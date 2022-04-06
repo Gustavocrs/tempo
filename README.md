@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/STATUS%20-Em%20contru%C3%A7%C3%A3o-yellow"/>
 
 <h3>Descrição do projeto</h3>
-<p> App de previsão de tempo, utilizando Axios para requisição de API externa, useState, useEffect e Geolocation </p>
+<p> App de previsão de tempo, utilizando Axios para requisição de API externa, useState, useEffect e Geolocation. </p>
 
 <h3>Acesse o projeto</h3><a href="https://gustavocrs.github.io/tempo/">Clique Aqui</a> 
 
