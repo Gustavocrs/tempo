@@ -39,7 +39,7 @@ export default function App() {
       (error) => console.log(error),
       options
     )
-  }, [])
+  })
 
   if (location === false) {
     return <Location />
