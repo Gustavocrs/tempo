@@ -24,18 +24,19 @@ export default function App() {
     setWeather(res.data)
   }
   
- useEffect(() => {
+useEffect(() => {
     navigator.geolocation.watchPosition(
       (position) => {
         getWeather(position.coords.latitude, position.coords.longitude)
         setLocation(true)
-        console.log(position)},
+      console.log(position)},
       (error) => console.log(error),
       (options) => ({
         enableHighAccuracy: true,
         timeout: 5000,
         maximumAge: 1000,
       })
+    )
   }, [])
 
   if (location === false) {
