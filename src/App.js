@@ -37,8 +37,11 @@ export default function App() {
         setLocation(true)
       console.log(position)},
       (error) => console.log(error),
-      options
-    )
+      (options) => ({
+        enableHighAccuracy: true,
+        timeout: 3000,
+        maximumAge: 1000,
+      })
   })
 
   if (location === false) {
