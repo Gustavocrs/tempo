@@ -25,17 +25,18 @@ export default function App() {
   }
   
 useEffect(() => {
+   const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
     navigator.geolocation.watchPosition(
       (position) => {
         getWeather(position.coords.latitude, position.coords.longitude)
         setLocation(true)
       console.log(position)},
       (error) => console.log(error),
-      (options) => ({
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 1000,
-      })
+      options
     )
   }, [])
 
