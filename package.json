@@ -2,7 +2,7 @@
   "name": "tempo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tempo-gustavocrs.vercel.app/",
+  "homepage": "https://gustavocrs.github.io/tempo/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
