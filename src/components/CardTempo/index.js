@@ -48,7 +48,7 @@ export default function CardTempo(props) {
             </div>
           </div>
           <p>Fonte: OpenWeather</p>
-          <p>https://openclimamap.org/</p>
+          <p translate="no">https://openweathermap.org/</p>
         </div>
       </div>
     </section>
